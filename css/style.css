@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+       padding: none;
+       margin: 0;
+    }
+#wrapper{
+padding: 2vh;
+gap: 1vh;
+border: 5vw 5wh;
+background-image: url(../img/nature.webp);
+display: grid;
+grid-template-columns: 25vw 45vw 20vw;
+grid-template-rows: 25vh 25vh 25vh 15vh;
+width: 100vw;
+height: 100vh;
+grid-template-areas: 
+"hd hd nv"
+"i1 sc sc"
+"i2 sc sc"
+"ft ft ft";
+}
+#header{
+    background-color: aquamarine;
+    background-position: center;
+   grid-area: hd;
+   font-size: xx-large;
+   text-align: center;
+    color: black;
+}
+#nav{
+    background-color: aquamarine;
+   grid-area: nv;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items: center;
+}
+#sc{
+
+    background-color: aquamarine;
+    grid-area: sc;
+    color: black;
+}
+#ft{
+    background-color: aquamarine;
+    grid-area: ft;
+
+}
+#i1{
+    grid-area: i1;
+    align-self: center;
+    max-width: 30px;
+}
